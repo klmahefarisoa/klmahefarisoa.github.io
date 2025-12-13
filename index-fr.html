@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karine L. Mahefarisoa - Défenseure One Health & Scientifique de l'environnement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sand: #E8DCC4;
+            --terracotta: #C77B58;
+            --sage: #8B9E7D;
+            --clay: #A67153;
+            --cream: #F5F0E8;
+            --deep-earth: #5C4A3F;
+            --soft-olive: #9AA37C;
+            --warm-white: #FAF8F4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Karla', sans-serif;
+            background: var(--warm-white);
+            color: var(--deep-earth);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Organic background decoration */
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            right: -20%;
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, var(--sand) 0%, transparent 70%);
+            opacity: 0.15;
+            z-index: -1;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: -30%;
+            left: -10%;
+            width: 40%;
+            height: 40%;
+            background: radial-gradient(circle, var(--sage) 0%, transparent 70%);
+            opacity: 0.1;
+            z-index: -1;
+            animation: float 25s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -30px) scale(1.1); }
+        }
+
+        /* Header */
+        header {
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 300;
+            color: var(--deep-earth);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--clay);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-tagline {
+            max-width: 600px;
+            margin: 2rem auto 0;
+            font-size: 1.1rem;
+            color: var(--sage);
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+        }
+
+        .hero-tagline::before,
+        .hero-tagline::after {
+            content: '~';
+            position: absolute;
+            color: var(--terracotta);
+            font-size: 1.5rem;
+        }
+
+        .hero-tagline::before {
+            left: 0;
+        }
+
+        .hero-tagline::after {
+            right: 0;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            flex-wrap: wrap;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav a {
+            font-family: 'Karla', sans-serif;
+            font-weight: 400;
+            text-decoration: none;
+            color: var(--clay);
+            font-size: 1rem;
+            text-transform: lowercase;
+            letter-spacing: 0.05em;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--terracotta);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--terracotta);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Section styling */
+        section {
+            margin: 6rem auto;
+            animation: fadeInUp 0.8s ease-out;
+            animation-fill-mode: both;
+        }
+
+        section:nth-child(1) { animation-delay: 0.2s; }
+        section:nth-child(2) { animation-delay: 0.4s; }
+        section:nth-child(3) { animation-delay: 0.6s; }
+        section:nth-child(4) { animation-delay: 0.8s; }
+        section:nth-child(5) { animation-delay: 1s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 400;
+            color: var(--deep-earth);
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--terracotta), var(--sage));
+            border-radius: 2px;
+        }
+
+        /* About section with dual column */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-text {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(199, 123, 88, 0.1);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .about-text strong {
+            color: var(--terracotta);
+            font-weight: 600;
+        }
+
+        .about-highlight {
+            background: var(--cream);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid var(--sage);
+        }
+
+        .about-highlight h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--clay);
+            margin-bottom: 1rem;
+        }
+
+        .about-highlight ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-highlight li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .about-highlight li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--terracotta);
+        }
+
+        /* Story section - NEW */
+        .story-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(92, 74, 63, 0.08);
+        }
+
+        .story-intro {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: var(--clay);
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
+
+        .story-text {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+
+        .story-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            color: var(--deep-earth);
+        }
+
+        .story-text strong {
+            color: var(--terracotta);
+            font-weight: 600;
+        }
+
+        .natiora-link {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 2px solid var(--sand);
+        }
+
+        .org-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--sage), var(--soft-olive));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(139, 158, 125, 0.3);
+        }
+
+        .org-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(139, 158, 125, 0.4);
+        }
+
+        .org-description {
+            margin-top: 1rem;
+            color: var(--clay);
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        /* Work section - Card grid */
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .work-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(92, 74, 63, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--sage);
+        }
+
+        .work-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(92, 74, 63, 0.15);
+        }
+
+        .work-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--deep-earth);
+            margin-bottom: 1rem;
+        }
+
+        .work-card .role {
+            color: var(--terracotta);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+        }
+
+        .work-card p {
+            color: var(--clay);
+            margin-bottom: 1rem;
+        }
+
+        .work-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .tag {
+            background: var(--sand);
+            color: var(--deep-earth);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* SDG Card Styling */
+        .sdg-card {
+            border-top: 4px solid #4C9F38;
+        }
+
+        .sdg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .sdg-item {
+            position: relative;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .sdg-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .sdg-icon {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .sdg-item:hover .sdg-icon {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .sdg-number {
+            display: none;
+        }
+
+        .sdg-description {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--sand);
+        }
+
+        /* Leadership section */
+        .leadership-content {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--sand) 100%);
+            padding: 3rem;
+            border-radius: 25px;
+            border: 2px solid rgba(199, 123, 88, 0.2);
+        }
+
+        .leadership-item {
+            margin-bottom: 2.5rem;
+        }
+
+        .leadership-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .leadership-item h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--deep-earth);
+            margin-bottom: 0.5rem;
+        }
+
+        .leadership-item .program {
+            color: var(--terracotta);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* Quote section */
+        .quote-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            margin: 6rem auto;
+        }
+
+        .quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-style: italic;
+            color: var(--clay);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .quote::before {
+            content: '"';
+            font-size: 6rem;
+            color: var(--terracotta);
+            opacity: 0.3;
+            position: absolute;
+            top: -3rem;
+            left: -2rem;
+        }
+
+        /* Contact section */
+        .contact-content {
+            text-align: center;
+            background: white;
+            padding: 4rem 3rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(92, 74, 63, 0.1);
+        }
+
+        .contact-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--clay);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 1.8rem;
+            background: var(--cream);
+            color: var(--deep-earth);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .social-links a:hover {
+            background: var(--terracotta);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(199, 123, 88, 0.3);
+        }
+
+        /* ORCID specific styling */
+        .social-links a[href*="orcid"] {
+            border: 2px solid #A6CE39;
+        }
+
+        .social-links a[href*="orcid"]:hover {
+            background: #A6CE39;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: var(--clay);
+            font-size: 0.95rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .work-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 1rem;
+            }
+
+            .hero-tagline {
+                padding: 0 1rem;
+            }
+
+            .story-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .story-text {
+                font-size: 1rem;
+            }
+
+            .sdg-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.8rem;
+            }
+
+            .social-links {
+                gap: 1rem;
+            }
+
+            .social-links a {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Decorative elements */
+        .decorative-circle {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: 1px solid var(--sage);
+            opacity: 0.1;
+            top: 50%;
+            left: -200px;
+            z-index: -1;
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="decorative-circle"></div>
+
+    <header>
+        <h1 class="hero-title">Karine L. Mahefarisoa</h1>
+        <p class="hero-subtitle">Défenseure One Health • Scientifique de l'environnement</p>
+        <p class="hero-tagline">Travailler à l'interface entre science et politique pour comprendre et combler le fossé entre recherche et action</p>
+    </header>
+
+    <nav>
+        <a href="#about">à propos</a>
+        <a href="#story">parcours</a>
+        <a href="#work">recherche & impact</a>
+        <a href="#leadership">leadership</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je suis <strong><a href="https://www.unep.org/topics/chemicals-and-pollution-action/chemicals-management/pollution-and-health/unep-one-health" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">défenseure One Health</a> et chercheuse</strong> travaillant à l'intersection de la conservation de la faune, de la santé humaine et des politiques environnementales. Mes recherches portent sur la conservation de la biodiversité à Madagascar, en particulier les lémuriens, en utilisant des approches métagénomiques pour détecter les maladies qui pourraient menacer à la fois la faune et les populations humaines.</p>
+                    
+                    <p>Mon travail vise à comprendre pourquoi des preuves scientifiques solides ne se traduisent souvent pas en actions politiques efficaces. Quels sont les obstacles ? Comment mieux connecter la recherche à la prise de décision concrète ? À travers mon travail à <a href="https://kulak.kuleuven.be/nl/onderzoek/Onderzoeksdomeinen/aquatische-biologie/personal_pages/Karine_Mahefarisoa" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">KU Leuven</a>, j'apprends à construire des ponts entre ces mondes—en travaillant avec les communautés, les décideurs politiques, les ONG et les collègues chercheurs pour trouver des voies qui relient les connaissances au changement concret.</p>
+                    
+                    <p>Être mère tout en faisant ce travail me rappelle quotidiennement pourquoi cela compte. J'aborde la recherche avec à la fois urgence et humilité, sachant qu'il y a encore tant à apprendre et que des progrès significatifs nécessitent une collaboration entre disciplines et perspectives.</p>
+                </div>
+
+                <div class="about-highlight">
+                    <h3>One Health en Action</h3>
+                    <ul>
+                        <li>Science vers l'Action — Travailler à traduire la recherche en solutions pratiques par la collaboration interdisciplinaire</li>
+                        <li>Leadership Collaboratif — Apprendre à construire des partenariats entre secteurs tout en valorisant les voix et expériences diverses</li>
+                        <li>Apprentissage Adaptatif — Rester ouverte aux nouvelles perspectives et approches dans un monde en rapide évolution</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="story">
+            <h2 class="section-title">Le Parcours</h2>
+            <div class="story-section">
+                <p class="story-intro">Des forêts aux salles de recherche—un chemin façonné par la persévérance, les questions, et le refus de choisir entre prendre soin de la faune et prendre soin des gens.</p>
+                
+                <div class="story-text">
+                    <p>Mon travail a commencé dans la forêt en tant que vétérinaire de la faune sauvage. Je pouvais soigner les animaux blessés, mais je voyais leurs habitats disparaître tandis que les communautés luttaient aux côtés de la faune même que j'essayais de protéger. Il est devenu clair que ces problèmes n'étaient pas séparés.</p>
+                    
+                    <p>Cette prise de conscience m'a renvoyée à l'école—deux fois—tout en continuant le travail de terrain. Deux masters plus tard, j'étais enceinte de mon premier enfant quand l'opportunité s'est présentée de poursuivre un doctorat à KU Leuven. Déménager à l'étranger, commencer un programme doctoral, devenir mère—tout en même temps. Les gens demandaient si c'était trop. Mais la maternité n'a pas affaibli ma détermination ; elle a clarifié pourquoi ce travail compte.</p>
+                    
+                    <p>Maintenant, je me concentre sur un autre fossé : l'espace entre ce que la science nous dit et ce que la politique fait réellement. Nous avons des recherches montrant comment protéger la biodiversité et soutenir les communautés, mais ces connaissances s'arrêtent souvent aux publications scientifiques. J'essaie de comprendre pourquoi—et comment nous pouvons construire de meilleurs chemins de la preuve à l'action.</p>
+                    
+                    <p>En chemin, j'ai co-fondé <strong>Natiora Defenders</strong>, la première organisation de Madagascar dédiée à célébrer et promouvoir les leaders et héros de la conservation. Nous mettons en lumière les individus et organisations protégeant la biodiversité unique de Madagascar—marine et terrestre—amplifiant leurs voix au-delà des frontières nationales tout en engageant les communautés locales dans l'action de conservation. Le parcours n'a pas été simple, mais les chemins les plus significatifs le sont rarement.</p>
+                </div>
+                
+                <div class="natiora-link">
+                    <a href="https://www.linkedin.com/company/natiora-defenders/" target="_blank" class="org-button">
+                        🌿 Natiora Defenders
+                    </a>
+                    <p class="org-description">Première organisation malgache célébrant les leaders de la conservation et protégeant la biodiversité unique par l'engagement communautaire</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2 class="section-title">Recherche & Impact</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="role">Poste Actuel</div>
+                    <h3>Défenseure One Health</h3>
+                    <p>À KU Leuven, travaillant à l'interface de la science et de la politique avec un accent sur la conservation de la biodiversité. Explorant la déconnexion entre preuves scientifiques et mise en œuvre politique—essayant de comprendre pourquoi des recherches solides ne mènent pas toujours à l'action, et comment nous pourrions changer cela.</p>
+                    <div class="tags">
+                        <span class="tag">One Health</span>
+                        <span class="tag">Interface Science-Politique</span>
+                        <span class="tag">Biodiversité</span>
+                    </div>
+                </div>
+
+                <div class="work-card sdg-card">
+                    <div class="role">Alignement d'Impact</div>
+                    <h3>Contribuer aux <a href="https://sdgs.un.org/goals" target="_blank" style="color: var(--deep-earth); text-decoration: none; border-bottom: 2px solid var(--terracotta);">ODD</a></h3>
+                    <p style="margin-bottom: 1.5rem;">Mon travail se connecte à plusieurs Objectifs de Développement Durable à travers des approches One Health qui lient conservation de la biodiversité, bien-être communautaire et action politique.</p>
+                    <div class="sdg-grid">
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-01.jpg" alt="ODD 1: Pas de pauvreté" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-02.jpg" alt="ODD 2: Faim zéro" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-03.jpg" alt="ODD 3: Bonne santé et bien-être" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-04.jpg" alt="ODD 4: Éducation de qualité" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-10.jpg" alt="ODD 10: Inégalités réduites" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-13.jpg" alt="ODD 13: Mesures relatives à la lutte contre les changements climatiques" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-14.jpg" alt="ODD 14: Vie aquatique" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-15.jpg" alt="ODD 15: Vie terrestre" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-16.jpg" alt="ODD 16: Paix, justice et institutions efficaces" class="sdg-icon">
+                        </div>
+                        <div class="sdg-item">
+                            <img src="image/sdg/sdg-17.jpg" alt="ODD 17: Partenariats pour la réalisation des objectifs" class="sdg-icon">
+                        </div>
+                    </div>
+                    <div class="sdg-description">
+                        <p style="font-size: 0.95rem; color: var(--clay); margin-top: 1rem; line-height: 1.6;">À travers la surveillance des maladies chez la faune et les communautés (ODD 3), le soutien aux moyens de subsistance locaux (ODD 1, 2), le mentorat des chercheurs émergents (ODD 4), la promotion de l'équité et l'amplification des voix marginalisées dans la conservation (ODD 10, 16), l'avancement de la gouvernance environnementale fondée sur les preuves (ODD 16), l'abordage des liens climat-biodiversité (ODD 13), et la protection des écosystèmes marins et terrestres de Madagascar (ODD 14, 15)—tout cela à travers des partenariats collaboratifs (ODD 17).</p>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="role">Publications</div>
+                    <h3>Contributions à la Recherche</h3>
+                    <p>Contribuant à la recherche sur One Health, la conservation de la biodiversité et la politique environnementale. Toujours en apprentissage, toujours en questionnement, et engagée à partager les résultats ouvertement. Toutes les publications disponibles via ORCID.</p>
+                    <div class="tags">
+                        <span class="tag">Recherche Ouverte</span>
+                        <span class="tag">Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="quote-section">
+            <div class="quote">
+                Comprendre pourquoi la bonne science ne mène pas toujours à de bonnes politiques est la première étape vers la construction de meilleurs ponts entre connaissance et action.
+            </div>
+        </div>
+
+        <section id="leadership">
+            <h2 class="section-title">Parcours de Leadership</h2>
+            <div class="leadership-content">
+                <div class="leadership-item">
+                    <h3><a href="https://globalaffairs.ucdavis.edu/mandela/fellows/mahefarisoa" target="_blank" style="color: var(--deep-earth); text-decoration: none; border-bottom: 2px solid var(--terracotta);">Bourse Mandela Washington</a></h3>
+                    <div class="program">Initiative des Jeunes Leaders Africains • UC Davis</div>
+                    <p>Une expérience transformatrice qui a façonné ma façon de penser le leadership et la collaboration. La bourse m'a connectée avec des leaders émergents à travers l'Afrique et a approfondi ma compréhension de comment travailler entre cultures et secteurs. Elle a renforcé ma conviction que le changement significatif nécessite d'écouter autant que de diriger.</p>
+                </div>
+
+                <div class="leadership-item">
+                    <h3>Engagement Communautaire</h3>
+                    <div class="program">Apprendre des Savoirs Locaux</div>
+                    <p>Travailler avec les communautés, les chercheurs et les organisations qui font déjà un travail important sur le terrain. Je m'intéresse à la façon dont les approches scientifiques peuvent soutenir—et non remplacer—les connaissances locales et les efforts de conservation menés par les communautés.</p>
+                </div>
+
+                <div class="leadership-item">
+                    <h3>Mentorat & Apprentissage Mutuel</h3>
+                    <div class="program">Soutenir les Chercheurs en Début de Carrière</div>
+                    <p>Le mentorat est une voie à double sens. Je travaille avec des étudiants et des chercheurs en début de carrière, en particulier des femmes en sciences de l'environnement, et j'apprends autant d'eux qu'ils peuvent apprendre de moi. Nous cherchons tous ensemble notre chemin.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Restons en Contact</h2>
+            <div class="contact-content">
+                <p>Toujours heureuse de discuter de collaborations de recherche, d'échanger des idées ou d'apprendre de votre travail. Cherchons ensemble des solutions.</p>
+                <div class="social-links">
+                    <a href="mailto:kl.mahefarisoa@gmail.com">✉️ Email</a>
+                    <a href="https://www.linkedin.com/in/karine-l-mahefarisoa/" target="_blank">💼 LinkedIn</a>
+                    <a href="https://orcid.org/0000-0003-0165-9088" target="_blank">🆔 ORCID</a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=suKxkJQAAAAJ" target="_blank">📚 Google Scholar</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Karine L. Mahefarisoa. Créé avec soin.</p>
+        <p>One Health • Biodiversity Conservation • Science-Pol
