@@ -37,10 +37,10 @@
             position: fixed;
             top: -50%;
             right: -20%;
-            width: 80%;
-            height: 80%;
+            width: 50%;
+            height: 50%;
             background: radial-gradient(circle, var(--sand) 0%, transparent 70%);
-            opacity: 0.3;
+            opacity: 0.15;
             z-index: -1;
             animation: float 20s ease-in-out infinite;
         }
@@ -50,10 +50,10 @@
             position: fixed;
             bottom: -30%;
             left: -10%;
-            width: 60%;
-            height: 60%;
+            width: 40%;
+            height: 40%;
             background: radial-gradient(circle, var(--sage) 0%, transparent 70%);
-            opacity: 0.2;
+            opacity: 0.1;
             z-index: -1;
             animation: float 25s ease-in-out infinite reverse;
         }
@@ -133,6 +133,39 @@
             padding: 2rem;
             flex-wrap: wrap;
             animation: fadeIn 1.2s ease-out;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 100;
+        }
+
+        .language-switcher a {
+            padding: 0.5rem 1rem;
+            background: var(--cream);
+            color: var(--deep-earth);
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .language-switcher a:hover {
+            background: var(--terracotta);
+            color: white;
+        }
+
+        .language-switcher a.active {
+            background: var(--sage);
+            color: white;
+            border: 2px solid var(--sage);
         }
 
         @keyframes fadeIn {
@@ -615,6 +648,11 @@
                 padding: 0.8rem 1.5rem;
                 font-size: 0.9rem;
             }
+
+            .language-switcher {
+                top: 1rem;
+                right: 1rem;
+            }
         }
 
         /* Decorative elements */
@@ -638,6 +676,11 @@
     </style>
 </head>
 <body>
+    <div class="language-switcher">
+        <a href="index.html" class="active">EN</a>
+        <a href="index-fr.html">FR</a>
+    </div>
+    
     <div class="decorative-circle"></div>
 
     <header>
