@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karine L. Mahefarisoa - Défenseure One Health & Scientifique de l'environnement</title>
+    <title>Karine L. Mahefarisoa - Chercheuse One Health & Scientifique de l'environnement</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -64,36 +64,38 @@
         }
 
         /* Header */
+        header {
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            animation: fadeInDown 1s ease-out;
         }
 
         .profile-photo-container {
+            margin-bottom: 2rem;
+            animation: fadeIn 1.5s ease-out;
             display: inline-block;
             background: white;
             padding: 10px;
             border-radius: 50%;
             box-shadow: 0 5px 20px rgba(92, 74, 63, 0.1);
-            margin-bottom: 2rem;
-            animation: fadeIn 1.5s ease-out;
+        }
 
         .profile-photo {
             width: 180px;
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            display: block;
             border: 4px solid var(--terracotta);
             box-shadow: 0 10px 30px rgba(92, 74, 63, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
         }
 
         .profile-photo:hover {
             transform: scale(1.05);
             box-shadow: 0 15px 40px rgba(92, 74, 63, 0.3);
-        header {
-            padding: 3rem 2rem;
-            text-align: center;
-            position: relative;
-            animation: fadeInDown 1s ease-out;
+        }
 
         @keyframes fadeInDown {
             from {
@@ -124,11 +126,6 @@
         }
 
         .hero-tagline {
-            }
-
-            .profile-photo {
-                width: 150px;
-                height: 150px;
             max-width: 600px;
             margin: 2rem auto 0;
             font-size: 1.1rem;
@@ -195,10 +192,6 @@
             background: var(--sage);
             color: white;
             border: 2px solid var(--sage);
-        }
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
         }
 
         @keyframes fadeIn {
@@ -591,6 +584,7 @@
 
         .social-links {
             display: flex;
+            justify-content: center;
             gap: 1.5rem;
             flex-wrap: wrap;
             margin-top: 2rem;
@@ -656,12 +650,12 @@
             }
 
             .hero-tagline {
+                padding: 0 1rem;
             }
 
             .profile-photo {
                 width: 150px;
                 height: 150px;
-                padding: 0 1rem;
             }
 
             .story-section {
@@ -684,6 +678,11 @@
             .social-links a {
                 padding: 0.8rem 1.5rem;
                 font-size: 0.9rem;
+            }
+
+            .language-switcher {
+                top: 1rem;
+                right: 1rem;
             }
         }
 
@@ -717,7 +716,7 @@
 
     <header>
         <div class="profile-photo-container">
-            <img src="image/profile.jpg" alt="Karine L. Mahefarisoa" class="profile-photo">
+            <img src="image/sdg/profile.jpg" alt="Karine L. Mahefarisoa" class="profile-photo">
         </div>
         <h1 class="hero-title">Karine L. Mahefarisoa</h1>
         <p class="hero-subtitle">Défenseure One Health • Scientifique de l'environnement</p>
@@ -737,7 +736,7 @@
             <h2 class="section-title">À Propos</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Je suis <strong><a href="https://www.unep.org/topics/chemicals-and-pollution-action/chemicals-management/pollution-and-health/unep-one-health" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">chercheuse One Health</a></strong>, spécialisée dans l'étude des interactions entre la conservation de la faune, la santé humaine et les politiques environnementales. Mes recherches portent sur la conservation de la biodiversité à Madagascar, notamment celle des lémuriens, en recourant à la métagénomique pour détecter les pathogènes susceptibles de menacer aussi bien la faune que les populations humaines.</p>
+                    <p>Je suis <strong><a href="https://www.unep.org/topics/chemicals-and-pollution-action/chemicals-management/pollution-and-health/unep-one-health" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">chercheuse One Health</a></strong>, spécialisée dans l'étude des interactions entre conservation de la faune, santé humaine et politiques environnementales. Mes recherches portent sur la conservation de la biodiversité à Madagascar, notamment les lémuriens, en utilisant la métagénomique pour détecter les pathogènes susceptibles de menacer aussi bien la faune que les populations humaines.</p>
                     
                     <p>Mon travail cherche à élucider un paradoxe : pourquoi des données scientifiques robustes peinent-elles si souvent à se traduire en politiques efficaces ? Quels sont les obstacles ? Comment faciliter le dialogue entre chercheurs et décideurs ? À travers mes recherches à <a href="https://kulak.kuleuven.be/nl/onderzoek/Onderzoeksdomeinen/aquatische-biologie/personal_pages/Karine_Mahefarisoa" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">KU Leuven</a>, j'explore ces passerelles en collaborant avec les communautés locales, les décideurs, les ONG et mes pairs chercheurs pour transformer les connaissances scientifiques en changements concrets.</p>
                     
@@ -848,7 +847,7 @@
 
         <div class="quote-section">
             <div class="quote">
-                Comprendre pourquoi l'excellence scientifique ne se traduit pas toujours par des politiques efficaces constitue la première étape vers la construction de véritables passerelles entre le savoir et l'action.
+                Comprendre pourquoi l'excellence scientifique ne se traduit pas toujours en politiques efficaces constitue la première étape vers la construction de véritables passerelles entre savoir et action.
             </div>
         </div>
 
@@ -892,3 +891,4 @@
     <footer>
         <p>© 2026 Karine L. Mahefarisoa. Créé avec soin.</p>
         <p>One Health Concept
+</html>
