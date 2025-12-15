@@ -492,11 +492,18 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
         }
 
-        .sdg-item:hover .sdg-icon {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        .sdg-item a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .sdg-item a:hover .sdg-icon {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(92, 74, 63, 0.3);
         }
 
         .sdg-number {
@@ -762,7 +769,7 @@
                 <div class="story-text">
                     <p>My work began in the forest as a wildlife veterinarian. I could treat injured animals, but I kept watching their habitats disappear while communities struggled alongside the very wildlife I was trying to protect. It became clear these weren't separate problems.</p>
                     
-                    <p>That realization sent me back to school—twice—while continuing fieldwork. Two master's degrees later, I was pregnant with my first child when the opportunity came to pursue a PhD at KU Leuven. Moving abroad, starting a doctoral program, becoming a mother—all at once. People asked if it was too much. But motherhood didn't weaken my resolve; it clarified why this work matters.</p>
+                    <p>That realization sent me back to school—twice—while continuing fieldwork. Two master's degrees later, I was pregnant with my first child when the opportunity came to pursue a PhD at KU Leuven. Moving abroad, starting a doctoral program, and becoming a mother—all at once. People asked if it was too much. But motherhood didn't weaken my resolve; it clarified why this work matters.</p>
                     
                     <p>Now I focus on a different gap: the space between what science tells us and what policy actually does. We have research showing how to protect biodiversity and support communities, but that knowledge often stops at journal publications. I'm trying to understand why—and how we can build better pathways from evidence to action.</p>
                     
@@ -798,34 +805,54 @@
                     <p style="margin-bottom: 1.5rem;">My work connects to multiple Sustainable Development Goals through One Health approaches that link biodiversity conservation, community well-being, and policy action.</p>
                     <div class="sdg-grid">
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-01.jpg" alt="SDG 1: No Poverty" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal1" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-01.jpg" alt="SDG 1: No Poverty" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-02.jpg" alt="SDG 2: Zero Hunger" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal2" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-02.jpg" alt="SDG 2: Zero Hunger" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-03.jpg" alt="SDG 3: Good Health and Well-being" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal3" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-03.jpg" alt="SDG 3: Good Health and Well-being" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-04.jpg" alt="SDG 4: Quality Education" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal4" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-04.jpg" alt="SDG 4: Quality Education" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-10.jpg" alt="SDG 10: Reduced Inequalities" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal10" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-10.jpg" alt="SDG 10: Reduced Inequalities" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-13.jpg" alt="SDG 13: Climate Action" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal13" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-13.jpg" alt="SDG 13: Climate Action" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-14.jpg" alt="SDG 14: Life Below Water" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal14" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-14.jpg" alt="SDG 14: Life Below Water" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-15.jpg" alt="SDG 15: Life on Land" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal15" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-15.jpg" alt="SDG 15: Life on Land" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-16.jpg" alt="SDG 16: Peace, Justice and Strong Institutions" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal16" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-16.jpg" alt="SDG 16: Peace, Justice and Strong Institutions" class="sdg-icon">
+                            </a>
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-17.jpg" alt="SDG 17: Partnerships for the Goals" class="sdg-icon">
+                            <a href="https://sdgs.un.org/goals/goal17" target="_blank" rel="noopener noreferrer">
+                                <img src="image/sdg/sdg-17.jpg" alt="SDG 17: Partnerships for the Goals" class="sdg-icon">
+                            </a>
                         </div>
                     </div>
                     <div class="sdg-description">
@@ -836,7 +863,7 @@
                 <div class="work-card">
                     <div class="role">Publications</div>
                     <h3>Research Contributions</h3>
-                    <p>Contributing to research on One Health, biodiversity conservation, and environmental policy. Still learning, still questioning, and committed to sharing findings openly. All publications available via ORCID.</p>
+                    <p>Contributing to research on One Health, biodiversity conservation, and environmental policy. Still learning, still questioning, and committed to sharing findings openly. All publications are available via ORCID.</p>
                     <div class="tags">
                         <span class="tag">Open Research</span>
                         <span class="tag">Collaboration</span>
