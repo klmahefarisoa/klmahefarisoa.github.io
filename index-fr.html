@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karine L. Mahefarisoa - One Health Advocate & Environmental Scientist</title>
+    <title>Karine L. Mahefarisoa - Défenseure One Health & Scientifique de l'environnement</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -64,38 +64,36 @@
         }
 
         /* Header */
-        header {
-            padding: 3rem 2rem;
-            text-align: center;
-            position: relative;
-            animation: fadeInDown 1s ease-out;
         }
 
         .profile-photo-container {
-            margin-bottom: 2rem;
-            animation: fadeIn 1.5s ease-out;
             display: inline-block;
             background: white;
             padding: 10px;
             border-radius: 50%;
             box-shadow: 0 5px 20px rgba(92, 74, 63, 0.1);
-        }
+            margin-bottom: 2rem;
+            animation: fadeIn 1.5s ease-out;
 
         .profile-photo {
             width: 180px;
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
+            display: block;
             border: 4px solid var(--terracotta);
             box-shadow: 0 10px 30px rgba(92, 74, 63, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: block;
         }
 
         .profile-photo:hover {
             transform: scale(1.05);
             box-shadow: 0 15px 40px rgba(92, 74, 63, 0.3);
-        }
+        header {
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            animation: fadeInDown 1s ease-out;
 
         @keyframes fadeInDown {
             from {
@@ -126,6 +124,11 @@
         }
 
         .hero-tagline {
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
             max-width: 600px;
             margin: 2rem auto 0;
             font-size: 1.1rem;
@@ -192,6 +195,10 @@
             background: var(--sage);
             color: white;
             border: 2px solid var(--sage);
+        }
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
         @keyframes fadeIn {
@@ -584,7 +591,6 @@
 
         .social-links {
             display: flex;
-            justify-content: center;
             gap: 1.5rem;
             flex-wrap: wrap;
             margin-top: 2rem;
@@ -650,12 +656,12 @@
             }
 
             .hero-tagline {
-                padding: 0 1rem;
             }
 
             .profile-photo {
                 width: 150px;
                 height: 150px;
+                padding: 0 1rem;
             }
 
             .story-section {
@@ -678,11 +684,6 @@
             .social-links a {
                 padding: 0.8rem 1.5rem;
                 font-size: 0.9rem;
-            }
-
-            .language-switcher {
-                top: 1rem;
-                right: 1rem;
             }
         }
 
@@ -708,137 +709,137 @@
 </head>
 <body>
     <div class="language-switcher">
-        <a href="index.html" class="active">EN</a>
-        <a href="index-fr.html">FR</a>
+        <a href="index.html">EN</a>
+        <a href="index-fr.html" class="active">FR</a>
     </div>
     
     <div class="decorative-circle"></div>
 
     <header>
         <div class="profile-photo-container">
-            <img src="image/sdg/profile.jpg" alt="Karine L. Mahefarisoa" class="profile-photo">
+            <img src="image/profile.jpg" alt="Karine L. Mahefarisoa" class="profile-photo">
         </div>
         <h1 class="hero-title">Karine L. Mahefarisoa</h1>
-        <p class="hero-subtitle">One Health Advocate • Environmental Scientist</p>
-        <p class="hero-tagline">Working at the intersection of science and policy to understand and bridge the gap between research and action</p>
+        <p class="hero-subtitle">Défenseure One Health • Scientifique de l'environnement</p>
+        <p class="hero-tagline">À l'interface science-politique : comprendre les obstacles qui freinent le passage de la recherche à l'action</p>
     </header>
 
     <nav>
-        <a href="#about">about</a>
-        <a href="#story">journey</a>
-        <a href="#work">research & impact</a>
+        <a href="#about">à propos</a>
+        <a href="#story">parcours</a>
+        <a href="#work">recherche & impact</a>
         <a href="#leadership">leadership</a>
-        <a href="#contact">connect</a>
+        <a href="#contact">contact</a>
     </nav>
 
     <div class="container">
         <section id="about">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">À Propos</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a <strong><a href="https://www.unep.org/topics/chemicals-and-pollution-action/chemicals-management/pollution-and-health/unep-one-health" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">One Health</a> advocate and researcher</strong> working at the intersection of wildlife conservation, human health, and environmental policy. My research focuses on biodiversity conservation in Madagascar, particularly lemurs, using metagenomic approaches to screen for diseases that could threaten both wildlife and human populations.</p>
+                    <p>Je suis <strong><a href="https://www.unep.org/topics/chemicals-and-pollution-action/chemicals-management/pollution-and-health/unep-one-health" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">chercheuse One Health</a></strong>, spécialisée dans l'étude des interactions entre la conservation de la faune, la santé humaine et les politiques environnementales. Mes recherches portent sur la conservation de la biodiversité à Madagascar, notamment celle des lémuriens, en recourant à la métagénomique pour détecter les pathogènes susceptibles de menacer aussi bien la faune que les populations humaines.</p>
                     
-                    <p>My work aims to understand why robust scientific evidence often fails to translate into effective policy action. What are the barriers? How can we better connect research with real-world decision-making? Through my work at <a href="https://kulak.kuleuven.be/nl/onderzoek/Onderzoeksdomeinen/aquatische-biologie/personal_pages/Karine_Mahefarisoa" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">KU Leuven</a>, I'm learning to bridge these worlds—working with communities, policymakers, NGOs, and fellow researchers to find pathways that connect knowledge with tangible change.</p>
+                    <p>Mon travail cherche à élucider un paradoxe : pourquoi des données scientifiques robustes peinent-elles si souvent à se traduire en politiques efficaces ? Quels sont les obstacles ? Comment faciliter le dialogue entre chercheurs et décideurs ? À travers mes recherches à <a href="https://kulak.kuleuven.be/nl/onderzoek/Onderzoeksdomeinen/aquatische-biologie/personal_pages/Karine_Mahefarisoa" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">KU Leuven</a>, j'explore ces passerelles en collaborant avec les communautés locales, les décideurs, les ONG et mes pairs chercheurs pour transformer les connaissances scientifiques en changements concrets.</p>
                     
-                    <p>Being a mother while doing this work reminds me daily why it matters. I approach research with both urgency and humility, knowing there's still so much to learn and that meaningful progress requires collaboration across disciplines and perspectives.</p>
+                    <p>Être mère tout en menant ces recherches me rappelle chaque jour l'urgence de ce travail. J'aborde la science avec détermination mais aussi avec humilité, consciente qu'il reste tant à apprendre et que les avancées durables nécessitent une véritable collaboration entre disciplines et perspectives.</p>
                 </div>
 
                 <div class="about-highlight">
-                    <h3>One Health in Action</h3>
+                    <h3>Une Approche One Health</h3>
                     <ul>
-                        <li>Science to Action — Working to translate research into practical solutions through interdisciplinary collaboration</li>
-                        <li>Collaborative Leadership — Learning to build partnerships across sectors while centering diverse voices and lived experiences</li>
-                        <li>Adaptive Learning — Staying open to new insights and approaches in a rapidly changing world</li>
+                        <li>De la Science à l'Action — Traduire les résultats de recherche en solutions concrètes par la collaboration interdisciplinaire</li>
+                        <li>Leadership Collaboratif — Construire des partenariats intersectoriels en valorisant la diversité des voix et des expériences</li>
+                        <li>Apprentissage Continu — Cultiver l'ouverture aux nouvelles perspectives dans un monde en constante évolution</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="story">
-            <h2 class="section-title">The Journey</h2>
+            <h2 class="section-title">Le Parcours</h2>
             <div class="story-section">
-                <p class="story-intro">From forest floors to research halls—a path shaped by persistence, questions, and a refusal to choose between caring for wildlife and caring for people.</p>
+                <p class="story-intro">De la forêt au laboratoire — un parcours nourri par la persévérance, le questionnement et la conviction qu'il est impossible de choisir entre protéger la faune et prendre soin des populations.</p>
                 
                 <div class="story-text">
-                    <p>My work began in the forest as a wildlife veterinarian. I could treat injured animals, but I kept watching their habitats disappear while communities struggled alongside the very wildlife I was trying to protect. It became clear these weren't separate problems.</p>
+                    <p>Tout a commencé en forêt, où j'exerçais en tant que vétérinaire de la faune sauvage. Je soignais les animaux blessés, mais j'assistais impuissante à la disparition de leurs habitats, tandis que les communautés locales luttaient pour survivre aux côtés de cette même faune que je m'efforçais de protéger. L'évidence s'est imposée : ces défis ne font qu'un.</p>
                     
-                    <p>That realization sent me back to school—twice—while continuing fieldwork. Two master's degrees later, I was pregnant with my first child when the opportunity came to pursue a PhD at KU Leuven. Moving abroad, starting a doctoral program, becoming a mother—all at once. People asked if it was too much. But motherhood didn't weaken my resolve; it clarified why this work matters.</p>
+                    <p>Cette prise de conscience m'a poussée à reprendre mes études—à deux reprises—tout en poursuivant mon travail de terrain. Deux masters plus tard, alors que j'étais enceinte de mon premier enfant, l'occasion s'est présentée de commencer un doctorat à KU Leuven. Partir à l'étranger, entamer un programme doctoral, devenir mère—le tout simultanément. Certains s'inquiétaient. Mais loin d'affaiblir ma détermination, la maternité a renforcé ma conviction : ce combat en vaut la peine.</p>
                     
-                    <p>Now I focus on a different gap: the space between what science tells us and what policy actually does. We have research showing how to protect biodiversity and support communities, but that knowledge often stops at journal publications. I'm trying to understand why—and how we can build better pathways from evidence to action.</p>
+                    <p>Aujourd'hui, mon attention se porte sur un autre fossé : celui qui sépare les avancées scientifiques des décisions politiques. Les recherches montrent comment protéger la biodiversité et soutenir les communautés, pourtant ces connaissances restent trop souvent confinées aux revues scientifiques. Je cherche à comprendre pourquoi—et surtout, comment construire de véritables passerelles entre données probantes et action concrète.</p>
                     
-                    <p>Along the way, I co-founded <strong>Natiora Defenders</strong>, Madagascar's first organization dedicated to celebrating and promoting conservation leaders and heroes. We spotlight the individuals and organizations protecting Madagascar's unique biodiversity—both marine and terrestrial—amplifying their voices beyond national borders while engaging local communities in conservation action. The journey hasn't been straightforward, but the most meaningful paths rarely are.</p>
+                    <p>En chemin, j'ai cofondé <strong>Natiora Defenders</strong>, la première organisation malgache dédiée à la valorisation des acteurs de la conservation. Nous mettons en lumière celles et ceux qui protègent la biodiversité unique de Madagascar—terrestre comme marine—en amplifiant leurs voix au-delà des frontières et en mobilisant les communautés locales. Le parcours n'est pas linéaire, mais les chemins qui comptent le sont rarement.</p>
                 </div>
                 
                 <div class="natiora-link">
                     <a href="https://www.linkedin.com/company/natiora-defenders/" target="_blank" class="org-button">
                         🌿 Natiora Defenders
                     </a>
-                    <p class="org-description">Madagascar's first organization celebrating conservation leaders and protecting unique biodiversity through community engagement</p>
+                    <p class="org-description">Première organisation malgache valorisant les acteurs de la conservation et leur engagement pour la préservation de la biodiversité</p>
                 </div>
             </div>
         </section>
 
         <section id="work">
-            <h2 class="section-title">Research & Impact</h2>
+            <h2 class="section-title">Recherche & Impact</h2>
             <div class="work-grid">
                 <div class="work-card">
-                    <div class="role">Current Position</div>
-                    <h3>One Health Advocate</h3>
-                    <p>At KU Leuven, working at the interface of science and policy with a focus on biodiversity conservation. Exploring the disconnect between scientific evidence and policy implementation—trying to understand why robust research doesn't always lead to action, and how we might change that.</p>
+                    <div class="role">Poste Actuel</div>
+                    <h3>Chercheuse One Health</h3>
+                    <p>À KU Leuven, mes recherches se situent à l'interface science-politique, avec un accent sur la conservation de la biodiversité. J'explore les raisons pour lesquelles des données scientifiques solides peinent à se traduire en politiques efficaces—et comment remédier à cette déconnexion.</p>
                     <div class="tags">
                         <span class="tag">One Health</span>
-                        <span class="tag">Science-Policy Interface</span>
-                        <span class="tag">Biodiversity</span>
+                        <span class="tag">Interface Science-Politique</span>
+                        <span class="tag">Biodiversité</span>
                     </div>
                 </div>
 
                 <div class="work-card sdg-card">
-                    <div class="role">Impact Alignment</div>
-                    <h3>Contributing to the <a href="https://sdgs.un.org/goals" target="_blank" style="color: var(--deep-earth); text-decoration: none; border-bottom: 2px solid var(--terracotta);">SDGs</a></h3>
-                    <p style="margin-bottom: 1.5rem;">My work connects to multiple Sustainable Development Goals through One Health approaches that link biodiversity conservation, community well-being, and policy action.</p>
+                    <div class="role">Alignement d'Impact</div>
+                    <h3>Contribuer aux <a href="https://sdgs.un.org/goals" target="_blank" style="color: var(--deep-earth); text-decoration: none; border-bottom: 2px solid var(--terracotta);">ODD</a></h3>
+                    <p style="margin-bottom: 1.5rem;">Mon travail s'inscrit dans plusieurs Objectifs de Développement Durable à travers une approche One Health qui lie conservation de la biodiversité, bien-être des communautés et action politique.</p>
                     <div class="sdg-grid">
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-01.jpg" alt="SDG 1: No Poverty" class="sdg-icon">
+                            <img src="image/sdg/sdg-01.jpg" alt="ODD 1: Pas de pauvreté" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-02.jpg" alt="SDG 2: Zero Hunger" class="sdg-icon">
+                            <img src="image/sdg/sdg-02.jpg" alt="ODD 2: Faim zéro" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-03.jpg" alt="SDG 3: Good Health and Well-being" class="sdg-icon">
+                            <img src="image/sdg/sdg-03.jpg" alt="ODD 3: Bonne santé et bien-être" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-04.jpg" alt="SDG 4: Quality Education" class="sdg-icon">
+                            <img src="image/sdg/sdg-04.jpg" alt="ODD 4: Éducation de qualité" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-10.jpg" alt="SDG 10: Reduced Inequalities" class="sdg-icon">
+                            <img src="image/sdg/sdg-10.jpg" alt="ODD 10: Inégalités réduites" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-13.jpg" alt="SDG 13: Climate Action" class="sdg-icon">
+                            <img src="image/sdg/sdg-13.jpg" alt="ODD 13: Mesures relatives à la lutte contre les changements climatiques" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-14.jpg" alt="SDG 14: Life Below Water" class="sdg-icon">
+                            <img src="image/sdg/sdg-14.jpg" alt="ODD 14: Vie aquatique" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-15.jpg" alt="SDG 15: Life on Land" class="sdg-icon">
+                            <img src="image/sdg/sdg-15.jpg" alt="ODD 15: Vie terrestre" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-16.jpg" alt="SDG 16: Peace, Justice and Strong Institutions" class="sdg-icon">
+                            <img src="image/sdg/sdg-16.jpg" alt="ODD 16: Paix, justice et institutions efficaces" class="sdg-icon">
                         </div>
                         <div class="sdg-item">
-                            <img src="image/sdg/sdg-17.jpg" alt="SDG 17: Partnerships for the Goals" class="sdg-icon">
+                            <img src="image/sdg/sdg-17.jpg" alt="ODD 17: Partenariats pour la réalisation des objectifs" class="sdg-icon">
                         </div>
                     </div>
                     <div class="sdg-description">
-                        <p style="font-size: 0.95rem; color: var(--clay); margin-top: 1rem; line-height: 1.6;">Through disease surveillance in wildlife and communities (SDG 3), supporting local livelihoods (SDGs 1, 2), mentoring emerging researchers (SDG 4), promoting equity and amplifying marginalized voices in conservation (SDGs 10, 16), advancing evidence-based environmental governance (SDG 16), addressing climate-biodiversity linkages (SDG 13), and protecting Madagascar's marine and terrestrial ecosystems (SDGs 14, 15)—all through collaborative partnerships (SDG 17).</p>
+                        <p style="font-size: 0.95rem; color: var(--clay); margin-top: 1rem; line-height: 1.6;">Par la surveillance des pathogènes chez la faune et dans les communautés (ODD 3), le soutien aux moyens de subsistance locaux (ODD 1, 2), le mentorat de jeunes chercheurs (ODD 4), la promotion de l'équité et l'amplification des voix marginalisées en conservation (ODD 10, 16), le renforcement d'une gouvernance environnementale fondée sur les preuves (ODD 16), l'étude des liens climat-biodiversité (ODD 13), et la protection des écosystèmes marins et terrestres malgaches (ODD 14, 15)—le tout dans une démarche collaborative (ODD 17).</p>
                     </div>
                 </div>
 
                 <div class="work-card">
                     <div class="role">Publications</div>
-                    <h3>Research Contributions</h3>
-                    <p>Contributing to research on One Health, biodiversity conservation, and environmental policy. Still learning, still questioning, and committed to sharing findings openly. All publications available via ORCID.</p>
+                    <h3>Travaux de Recherche</h3>
+                    <p>Je contribue à la recherche en One Health, à la conservation de la biodiversité et aux politiques environnementales. Dans une démarche d'apprentissage continu et de questionnement, je m'engage à partager mes résultats en accès libre via ORCID.</p>
                     <div class="tags">
-                        <span class="tag">Open Research</span>
+                        <span class="tag">Science Ouverte</span>
                         <span class="tag">Collaboration</span>
                     </div>
                 </div>
@@ -847,39 +848,39 @@
 
         <div class="quote-section">
             <div class="quote">
-                Understanding why good science doesn't always lead to good policy is the first step toward building better bridges between knowledge and action.
+                Comprendre pourquoi l'excellence scientifique ne se traduit pas toujours par des politiques efficaces constitue la première étape vers la construction de véritables passerelles entre le savoir et l'action.
             </div>
         </div>
 
         <section id="leadership">
-            <h2 class="section-title">Leadership Journey</h2>
+            <h2 class="section-title">Parcours de Leadership</h2>
             <div class="leadership-content">
                 <div class="leadership-item">
-                    <h3><a href="https://globalaffairs.ucdavis.edu/mandela/fellows/mahefarisoa" target="_blank" style="color: var(--deep-earth); text-decoration: none; border-bottom: 2px solid var(--terracotta);">Mandela Washington Fellowship</a></h3>
-                    <div class="program">Young African Leaders Initiative • UC Davis</div>
-                    <p>A transformative experience that shaped how I think about leadership and collaboration. The fellowship connected me with emerging leaders across Africa and deepened my understanding of how to work across cultures and sectors. It reinforced my belief that meaningful change requires listening as much as leading.</p>
+                    <h3><a href="https://globalaffairs.ucdavis.edu/mandela/fellows/mahefarisoa" target="_blank" style="color: var(--deep-earth); text-decoration: none; border-bottom: 2px solid var(--terracotta);">Bourse Mandela Washington</a></h3>
+                    <div class="program">Initiative des Jeunes Leaders Africains • UC Davis</div>
+                    <p>Une expérience déterminante qui a transformé ma vision du leadership et de la collaboration. Ce programme m'a permis de tisser des liens avec des leaders émergents à travers l'Afrique et d'approfondir ma compréhension du travail interculturel et intersectoriel. Il a confirmé une conviction : le changement durable exige autant d'écoute que de leadership.</p>
                 </div>
 
                 <div class="leadership-item">
-                    <h3>Community Engagement</h3>
-                    <div class="program">Learning from Local Knowledge</div>
-                    <p>Working with communities, researchers, and organizations who are already doing important work on the ground. I'm interested in how scientific approaches can support—not replace—local knowledge and community-led conservation efforts.</p>
+                    <h3>Engagement Communautaire</h3>
+                    <div class="program">Apprendre des Savoirs Locaux</div>
+                    <p>Je collabore avec des communautés, des chercheurs et des organisations déjà engagés sur le terrain. Mon intérêt porte sur la façon dont les approches scientifiques peuvent enrichir—sans se substituer—les savoirs locaux et les initiatives de conservation portées par les communautés elles-mêmes.</p>
                 </div>
 
                 <div class="leadership-item">
-                    <h3>Mentorship & Learning Together</h3>
-                    <div class="program">Supporting Early Career Researchers</div>
-                    <p>Mentoring is a two-way street. I work with students and early-career researchers, especially women in environmental science, and I learn just as much from them as they might from me. We're all figuring this out together.</p>
+                    <h3>Mentorat & Apprentissage Mutuel</h3>
+                    <div class="program">Accompagner les Jeunes Chercheurs</div>
+                    <p>Le mentorat est un échange réciproque. J'accompagne des étudiants et des jeunes chercheurs, notamment des femmes en sciences environnementales, tout en apprenant énormément à leur contact. Nous avançons ensemble dans cette démarche.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2 class="section-title">Let's Connect</h2>
+            <h2 class="section-title">Restons en Contact</h2>
             <div class="contact-content">
-                <p>Always happy to chat about research collaborations, share ideas, or learn from your work. Let's figure things out together.</p>
+                <p>Toujours ravie d'échanger sur des projets de recherche collaboratifs, de partager des idées ou d'apprendre grâce à vos travaux. Explorons ensemble des solutions.</p>
                 <div class="social-links">
-                    <a href="/cdn-cgi/l/email-protection#adc6c183c0ccc5c8cbccdfc4dec2ccedcac0ccc4c183cec2c0">✉️ Email</a>
+                    <a href="/cdn-cgi/l/email-protection#9ef5f2b0f3fff6fbf8ffecf7edf1ffdef9f3fff7f2b0fdf1f3">✉️ Email</a>
                     <a href="https://www.linkedin.com/in/karine-l-mahefarisoa/" target="_blank">💼 LinkedIn</a>
                     <a href="https://orcid.org/0000-0003-0165-9088" target="_blank">🆔 ORCID</a>
                     <a href="https://scholar.google.com/citations?hl=en&user=suKxkJQAAAAJ" target="_blank">📚 Google Scholar</a>
@@ -889,5 +890,5 @@
     </div>
 
     <footer>
-        <p>© 2026 Karine L. Mahefarisoa. Built with care.</p>
-        <p>One Health • Biodiversity Conservation • Science-Policy Interface
+        <p>© 2026 Karine L. Mahefarisoa. Créé avec soin.</p>
+        <p>One Health Concept
