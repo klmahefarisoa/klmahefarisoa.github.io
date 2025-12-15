@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karine L. Mahefarisoa - Promotrice de "One Health" & Scientifique de l'environnement</title>
+    <title>Karine L. Mahefarisoa - Défenseure One Health & Scientifique de l'environnement</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -64,12 +64,36 @@
         }
 
         /* Header */
+        }
+
+        .profile-photo-container {
+            display: inline-block;
+            background: white;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 5px 20px rgba(92, 74, 63, 0.1);
+            margin-bottom: 2rem;
+            animation: fadeIn 1.5s ease-out;
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            border: 4px solid var(--terracotta);
+            box-shadow: 0 10px 30px rgba(92, 74, 63, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(92, 74, 63, 0.3);
         header {
             padding: 3rem 2rem;
             text-align: center;
             position: relative;
             animation: fadeInDown 1s ease-out;
-        }
 
         @keyframes fadeInDown {
             from {
@@ -100,6 +124,11 @@
         }
 
         .hero-tagline {
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
             max-width: 600px;
             margin: 2rem auto 0;
             font-size: 1.1rem;
@@ -133,6 +162,43 @@
             padding: 2rem;
             flex-wrap: wrap;
             animation: fadeIn 1.2s ease-out;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 100;
+        }
+
+        .language-switcher a {
+            padding: 0.5rem 1rem;
+            background: var(--cream);
+            color: var(--deep-earth);
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .language-switcher a:hover {
+            background: var(--terracotta);
+            color: white;
+        }
+
+        .language-switcher a.active {
+            background: var(--sage);
+            color: white;
+            border: 2px solid var(--sage);
+        }
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
         @keyframes fadeIn {
@@ -525,7 +591,6 @@
 
         .social-links {
             display: flex;
-            justify-content: center;
             gap: 1.5rem;
             flex-wrap: wrap;
             margin-top: 2rem;
@@ -591,6 +656,11 @@
             }
 
             .hero-tagline {
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
                 padding: 0 1rem;
             }
 
@@ -638,9 +708,17 @@
     </style>
 </head>
 <body>
+    <div class="language-switcher">
+        <a href="index.html">EN</a>
+        <a href="index-fr.html" class="active">FR</a>
+    </div>
+    
     <div class="decorative-circle"></div>
 
     <header>
+        <div class="profile-photo-container">
+            <img src="image/profile.jpg" alt="Karine L. Mahefarisoa" class="profile-photo">
+        </div>
         <h1 class="hero-title">Karine L. Mahefarisoa</h1>
         <p class="hero-subtitle">Défenseure One Health • Scientifique de l'environnement</p>
         <p class="hero-tagline">À l'interface science-politique : comprendre les obstacles qui freinent le passage de la recherche à l'action</p>
@@ -659,7 +737,7 @@
             <h2 class="section-title">À Propos</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Je suis <strong><a href="https://www.unep.org/topics/chemicals-and-pollution-action/chemicals-management/pollution-and-health/unep-one-health" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">chercheuse One Health</a></strong>, spécialisée dans l'étude des interactions entre conservation de la faune, santé humaine et politiques environnementales. Mes recherches portent sur la conservation de la biodiversité à Madagascar, notamment les lémuriens, en utilisant la métagénomique pour détecter les pathogènes susceptibles de menacer aussi bien la faune que les populations humaines.</p>
+                    <p>Je suis <strong><a href="https://www.unep.org/topics/chemicals-and-pollution-action/chemicals-management/pollution-and-health/unep-one-health" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">chercheuse One Health</a></strong>, spécialisée dans l'étude des interactions entre la conservation de la faune, la santé humaine et les politiques environnementales. Mes recherches portent sur la conservation de la biodiversité à Madagascar, notamment celle des lémuriens, en recourant à la métagénomique pour détecter les pathogènes susceptibles de menacer aussi bien la faune que les populations humaines.</p>
                     
                     <p>Mon travail cherche à élucider un paradoxe : pourquoi des données scientifiques robustes peinent-elles si souvent à se traduire en politiques efficaces ? Quels sont les obstacles ? Comment faciliter le dialogue entre chercheurs et décideurs ? À travers mes recherches à <a href="https://kulak.kuleuven.be/nl/onderzoek/Onderzoeksdomeinen/aquatische-biologie/personal_pages/Karine_Mahefarisoa" target="_blank" style="color: var(--terracotta); text-decoration: none; border-bottom: 1px dotted var(--terracotta);">KU Leuven</a>, j'explore ces passerelles en collaborant avec les communautés locales, les décideurs, les ONG et mes pairs chercheurs pour transformer les connaissances scientifiques en changements concrets.</p>
                     
@@ -683,11 +761,11 @@
                 <p class="story-intro">De la forêt au laboratoire — un parcours nourri par la persévérance, le questionnement et la conviction qu'il est impossible de choisir entre protéger la faune et prendre soin des populations.</p>
                 
                 <div class="story-text">
-                    <p>Tout a commencé en forêt, où j'exerçais en tant que vétérinaire de la faune sauvage.  Prenant soin des lémuriens, j'assistais impuissante à la disparition de leurs habitats, tandis que les communautés locales luttaient pour survivre aux côtés de cette même faune que je m'efforçais de protéger. L'évidence s'est imposée : ces défis ne font qu'un.</p>
+                    <p>Tout a commencé en forêt, où j'exerçais en tant que vétérinaire de la faune sauvage. Je prenais soin des faunes sauvages, particulièrement des lémuriens, mais j'assistais impuissante à la disparition de leurs habitats pendant que les communautés locales luttaient pour survivre aux côtés de cette même faune que je m'efforçais de protéger. L'évidence s'est imposée : ces défis ne font qu'un.</p>
                     
-                    <p>Cette prise de conscience m'a poussée à reprendre mes études—à deux reprises—tout en poursuivant mon travail de terrain. Deux masters plus tard, alors que j'étais enceinte de mon premier enfant, l'occasion s'est présentée de commencer un doctorat à KU Leuven. Partir à l'étranger, entamer un programme doctoral, devenir mère—le tout simultanément. Certains s'inquiétaient. Mais loin d'affaiblir ma détermination, la maternité a renforcé ma conviction : ce combat en vaut la peine.</p>
+                    <p>Cette prise de conscience m'a poussée à reprendre mes études—à deux reprises—tout en poursuivant mon travail de terrain. Deux masters plus tard, alors que j'étais enceinte de mon premier enfant, l'occasion s'est présentée de démarrer un doctorat à KU Leuven. Partir à l'étranger, entamer un programme doctoral, devenir mère—le tout simultanément. Certains s'inquiétaient. Mais loin d'affaiblir ma détermination, la maternité a renforcé ma conviction : ce combat en vaut la peine.</p>
                     
-                    <p>Aujourd'hui, mon attention se porte sur un autre fossé : celui qui sépare les avancées scientifiques des décisions politiques. Les recherches montrent comment protéger la biodiversité et soutenir les communautés ; pourtant, ces connaissances restent trop souvent confinées aux revues scientifiques. Je cherche à comprendre pourquoi—et surtout, comment construire de véritables passerelles entre données probantes et action concrète.</p>
+                    <p>Aujourd'hui, mon attention se porte sur un autre fossé : celui qui sépare les avancées scientifiques des décisions politiques. Les recherches montrent comment protéger la biodiversité et soutenir les communautés, pourtant ces connaissances restent trop souvent confinées aux revues scientifiques. Je cherche à comprendre pourquoi—et surtout, comment construire de véritables passerelles entre données probantes et action concrète.</p>
                     
                     <p>En chemin, j'ai cofondé <strong>Natiora Defenders</strong>, la première organisation malgache dédiée à la valorisation des acteurs de la conservation. Nous mettons en lumière celles et ceux qui protègent la biodiversité unique de Madagascar—terrestre comme marine—en amplifiant leurs voix au-delà des frontières et en mobilisant les communautés locales. Le parcours n'est pas linéaire, mais les chemins qui comptent le sont rarement.</p>
                 </div>
@@ -770,7 +848,7 @@
 
         <div class="quote-section">
             <div class="quote">
-                Comprendre pourquoi des résultats scientifiques robustes n’aboutissent pas toujours à des politiques publiques efficaces constitue un premier pas pour mieux transformer le savoir en action.
+                Comprendre pourquoi l'excellence scientifique ne se traduit pas toujours par des politiques efficaces constitue la première étape vers la construction de véritables passerelles entre le savoir et l'action.
             </div>
         </div>
 
@@ -779,20 +857,20 @@
             <div class="leadership-content">
                 <div class="leadership-item">
                     <h3><a href="https://globalaffairs.ucdavis.edu/mandela/fellows/mahefarisoa" target="_blank" style="color: var(--deep-earth); text-decoration: none; border-bottom: 2px solid var(--terracotta);">Bourse Mandela Washington</a></h3>
-                    <div class="program">Mandela Washington Fellowship • UC Davis</div>
+                    <div class="program">Initiative des Jeunes Leaders Africains • UC Davis</div>
                     <p>Une expérience déterminante qui a transformé ma vision du leadership et de la collaboration. Ce programme m'a permis de tisser des liens avec des leaders émergents à travers l'Afrique et d'approfondir ma compréhension du travail interculturel et intersectoriel. Il a confirmé une conviction : le changement durable exige autant d'écoute que de leadership.</p>
                 </div>
 
                 <div class="leadership-item">
                     <h3>Engagement Communautaire</h3>
                     <div class="program">Apprendre des Savoirs Locaux</div>
-                    <p>Je collabore avec des communautés, des chercheurs et des organisations déjà engagés sur le terrain. Mon intérêt porte sur la façon dont les approches scientifiques peuvent enrichir—sans se substituer—les savoirs locaux et les initiatives de conservation portées par les communautés elles-mêmes.</p>
+                    <p>Je collabore avec des communautés, des chercheurs et des organisations déjà engagés sur le terrain. Mon intérêt porte sur la manière dont les approches scientifiques peuvent enrichir—sans se substituer—les savoirs locaux et les initiatives de conservation portées par les communautés elles-mêmes.</p>
                 </div>
 
                 <div class="leadership-item">
                     <h3>Mentorat & Apprentissage Mutuel</h3>
                     <div class="program">Accompagner les Jeunes Chercheurs</div>
-                    <p>Le mentorat est un échange réciproque. J'accompagne des étudiants et des jeunes chercheurs, notamment des femmes en sciences environnementales, tout en apprenant énormément grâce à nos échanges. Nous avançons ensemble dans cette démarche.</p>
+                    <p>Le mentorat est un échange réciproque. J'accompagne des étudiants et des jeunes chercheurs, notamment des femmes en sciences environnementales, tout en apprenant énormément auprès d'eux. Nous avançons ensemble dans cette démarche.</p>
                 </div>
             </div>
         </section>
@@ -813,4 +891,4 @@
 
     <footer>
         <p>© 2026 Karine L. Mahefarisoa. Créé avec soin.</p>
-        <p>One Healt
+        <p>One Health Concept
